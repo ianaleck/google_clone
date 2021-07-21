@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.65);
+  fill: rgba(0, 0, 0, 0.65);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1.8em;
+  font-size: 0.9em;
+}
+
+header a {
+  margin: 0 0.7em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.search--links {
+  color: inherit;
+  text-decoration: none;
+}
+.search--links:hover {
+  text-decoration: underline;
+}
+.google--apps {
+  fill: inherit;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.profile--picture {
+  height: 3em;
+  width: 3em;
+  padding: 1em;
+  background: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all 0.35s ease-in-out;
+}
+
+.profile--picture:hover {
+  border-color: pink;
+}
+
+.main--container {
+  padding: 2em;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main--logo {
+  max-width: 18em;
+  margin: 5em 0 2em;
+}
+
+.search--container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  margin-bottom: 2em;
+}
+.search--container svg {
+  height: 1.2em;
+  width: 1.2em;
+  cursor: pointer;
+}
+
+.search--container input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 2em;
+}
+
+.search--buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.search--button {
+  background: #f9f9f9;
+  padding: 0.5em 1.2em;
+  margin: 0 0.2em;
+  border-radius: 4px;
+}
+
+.languages {
+  font-size: 0.9em;
+}
+
+.languages a {
+  margin: 0 0.3em;
+}
+
+footer {
+  background: #f9f9f9;
+  width: 100%;
+}
+
+.country {
+  padding: 1em 2em;
+  border-bottom: 1px solid #dadada;
+  font-size: 0.9em;
+}
+
+.search--button-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  flex-direction: column;
+}
+
+.search--button-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em;
+}
+.search--button-nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 0 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .search--button-nav {
+    flex-direction: row;
+  }
+}
